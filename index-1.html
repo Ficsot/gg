@@ -1,0 +1,99 @@
+<form action="telegram.php">
+<div class="lid-form">
+	<p class="clock">x</p>
+	<div class="forms">
+		<div class="bord">
+		<p class="text-2 ">Поспішай! Акція для ЗСУ</p>
+	</div>
+		<p class="text text-1 name">Ім'я</p>
+		<p class="text phone">Номер телефону</p>
+		<input type="text" name="user_name" id="text-name" value="" placeholder="Ім'я"/>
+		<input type="text" name="user_phone" id="text-phone" value="" placeholder="Номер телефону"/>
+		<p class="text text-1 number">Розмір пари</p>
+		<input type="text" name="user_number" id="text-number" value="" placeholder="Розмір пари"/>
+		<button class="butt" type="submit">Відправити</button>
+	</div>
+	</div>
+</form>
+
+	
+	<style>
+		.clock {
+			position: absolute;
+			font-size: 18px;
+			margin-top: 20px;
+            margin-left: 280px;	
+			cursor: pointer;
+		}
+		.butt {
+			margin-top: 21px;
+			color: white;
+			background: black;
+			border-radius: 10px;
+			width: 150px;
+			height: 30px;
+		}
+		.butt:hover {
+			box-shadow: 1px 1px 1px 1px rgb(145, 145, 145);
+		}
+		.text-1 {
+			margin-left: 18px;
+			margin-top: 20px;
+		}
+		.phone {
+			position: absolute;
+			margin-top: 140px;
+			margin-left: 8px;
+		}
+		input {
+			border-radius: 20px;
+			width: 280px;
+			height: 40px;
+			margin-top: 45px;
+			box-shadow: 0px 5px 0px 0px;
+			text-align: center;
+		}
+		input:hover {
+			box-shadow: 0px 5px 0px 0px rgb(204, 204, 204);
+		}
+		.text {
+			font-size: 15px;
+			color: rgb(0, 0, 0);
+			position: absolute;
+			font-family:Verdana, Geneva, Tahoma, sans-serif;
+		}
+		.text-2 {
+			font-size: 15px;
+			color: rgb(255, 255, 255);
+			position: absolute;
+			margin-top: 8px;
+			margin-left: 23px;
+			font-family:Verdana, Geneva, Tahoma, sans-serif;
+		}
+		.bord {
+			width: 250px;
+			border-radius: 15px;
+			margin-left: 7px;
+			height: 40px;
+			margin-top: 10px;
+			background-color: #102330;
+		}
+		.lid-form {
+			position: absolute;
+			width: 300px;
+			height: 365px;
+			text-align: center;
+			border-radius: 20px;
+            box-shadow: 0 0 10px;
+			margin-top: 50px;
+			margin-left: 37%;
+			z-index: 2;
+			background-color: rgb(255, 255, 255);
+		}
+		@media (max-width: 776px) {
+                            .lid-form{
+                               margin-left: 1%;
+							   margin-top: 1px;
+                            }
+                           }
+	</style>
